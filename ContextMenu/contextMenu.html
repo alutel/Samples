@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Context Menus!</title>
+  <link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="primary-header">
+    <div class="container">
+      <h1 class="primary-header__title">
+        Clic Derecho <small>para aplicar en Alutel Mobility!</small>
+      </h1>
+    </div>
+  </header>
+  <main class="content">
+    <div class="container">
+      <ul class="tasks">
+        <li class="task" data-id="3">
+          <div class="task__content">
+            Alutel Mobile 1
+          </div>
+          <div class="task__actions">
+            <i class="fa fa-eye"></i>
+            <i class="fa fa-edit"></i>
+            <i class="fa fa-times"></i>
+          </div>
+        </li>
+        <li class="task" data-id="2">
+          <div class="task__content">
+            Alutel Mobile 2
+          </div>
+          <div class="task__actions">
+            <i class="fa fa-eye"></i>
+            <i class="fa fa-edit"></i>
+            <i class="fa fa-times"></i>
+          </div>
+        </li>
+        <li class="task" data-id="1">
+          <div class="task__content">
+            Virtual Zone 1
+          </div>
+          <div class="task__actions">
+            <i class="fa fa-eye"></i>
+            <i class="fa fa-edit"></i>
+            <i class="fa fa-times"></i>
+          </div>
+        </li>
+      </ul>
+      <div class="content__footer">
+        <button>No hago nada!</button>
+      </div>
+    </div>
+  </main>
+  <footer class="primary-footer">
+    <div class="container">
+      <small>&copy; 2016, Clic Derecho</small>
+    </div>
+  </footer>
+  <nav id="context-menu" class="context-menu">
+    <ul class="context-menu__items">
+      <li class="context-menu__item">
+        <a href="alutelmobility.com" class="context-menu__link" data-action="LiveT"><i class="fa fa-eye"></i> Live Tracking</a>
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="HistT"><i class="fa fa-edit"></i> Historical Tracking</a>
+      </li>
+      <li class="context-menu__item">
+        <a href="#" class="context-menu__link" data-action="DefineVZ"><i class="fa fa-times"></i> Define Virtual Zone</a>
+      </li>
+    </ul>
+  </nav>
+  <script src="main.js"></script>
+</body>
+</html>
